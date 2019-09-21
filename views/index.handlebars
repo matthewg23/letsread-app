@@ -1,40 +1,38 @@
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <h1 style=color:whitesmoke>{{msg}}</h1>
+ </nav>
+
 <div id="home">
   <div class="container">
 
-    <div class="row">
-      <div class="col-12">
-        <nav class="navbar navbar-dark bg-dark">
-          <h1>{{msg}}</h1>
-            <h3>Let's Read!</h3>
-        </nav>
-        </div>
-    </div>
+  
 
     <div class="row">
       <div class="col-8 offset-2">
         
-        <h1>{{msg}}</h1>
-        <h3>Let's Read!</h3>
+        <br>
+        <h3>Keep track of your favorite books and book reviews by inputting the form below.</h3>
+        <br>
 
         <form class="clearfix mb-4" action="POST">
 
           <div class="form-group">
-            <label for="book-title">Enter a book title</label>
+            <label for="book-title"><h5>Enter a book title</h5></label>
             <input type="text" id="book-title" class="form-control" aria-describedby="book-title" placeholder="Enter a book title">
           </div>
 
           <div class="form-group">
-            <label for="book-title">Enter a book author</label>
+            <label for="book-title"><h5>Enter a book author</h5></label>
             <input type="text" id="book-author" class="form-control" aria-describedby="book-author" placeholder="Enter the book's author">
           </div>
 
           <div class="form-group">
-            <label for="book-title">Enter the book ISBN number</label>
+            <label for="book-title"><h5>Enter the book ISBN number</h5></label>
             <input type="text" id="book-isbn" class="form-control" aria-describedby="book-isbn" placeholder="Enter the book ISBN number">
           </div>
 
           <div class="form-group">
-            <label for="book-review">Write a review for the book</label>
+            <label for="book-review"><h5>Write a review for the book</h5></label>
             <textarea class="form-control" id="book-review" aria-describedby="book-review" placeholder="Write a review for the book"></textarea>
           </div>
 
@@ -56,7 +54,16 @@
           {{/each}}
         </ul>
 
-
+<footer class="footer">
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">
+                        <small>&copy; 2019. Mariana and Matt. All Rights Reserved.</small>
+                    </p>
+        
+                </div>
+            </div>
+        </footer>
 
       </div>
     </div>
