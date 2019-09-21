@@ -5,7 +5,10 @@ module.exports = function(sequelize, DataTypes) {
     isbn: DataTypes.STRING,
     review: DataTypes.TEXT
   }, {
-    freezeTableName: true
+    freezeTableName: true,
+    dialectOptions: {
+      timeout: 29
+    }
   });
   return Book;
 };
